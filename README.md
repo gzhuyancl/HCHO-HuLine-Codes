@@ -121,3 +121,22 @@ left and right neighbor lag values
 1-year slope
 difference from along-line spatial mean
 ```
+
+## ScienceDB Codes
+
+The `Codes/` folder contains the oversampling example codes downloaded from the ScienceDB dataset:
+
+```text
+Global OMI HCHO Level-3 oversampling dataset
+DOI: https://doi.org/10.57760/sciencedb.29626
+Source: https://www.scidb.cn/detail?dataSetId=a3d2f13ae6064ecb809430fb1ef51f6f
+License: CC BY 4.0
+```
+
+The folder includes:
+
+```text
+Codes/cakecut_src/         Fortran oversampling source code and related files
+Codes/code_oversampling/   R demo scripts for the oversampling workflow
+Codes/code_application/    Python demo scripts for using converted data
+```
