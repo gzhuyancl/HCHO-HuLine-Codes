@@ -141,3 +141,5 @@ Codes_oversampling/cakecut_src/         Fortran oversampling source code and rel
 Codes_oversampling/code_oversampling/   R demo scripts for the oversampling workflow
 Codes_oversampling/code_application/    Python demo scripts for using converted data
 ```
+
+See `Codes_oversampling/README.md` for the detailed file guide and system requirements.
