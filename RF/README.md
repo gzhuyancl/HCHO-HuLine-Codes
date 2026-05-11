@@ -1,6 +1,6 @@
 # RF Prediction Codes
 
-This folder contains two Random Forest scripts for annual tropospheric formaldehyde (HCHO) vertical column density (VCD) prediction.
+This folder contains the Random Forest scripts for annual tropospheric formaldehyde (HCHO) vertical column density (VCD) prediction in this project.
 
 - `RF1.py`: RF1, independent grid-cell time-series prediction.
 - `RF2.py`: RF2, line-based spatiotemporal prediction.

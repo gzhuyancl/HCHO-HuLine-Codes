@@ -1,6 +1,6 @@
-# HCHO VCD Prediction and Oversampling Codes
+# HCHO VCD Prediction and Oversampling Workflow
 
-This repository contains code for annual tropospheric formaldehyde (HCHO) vertical column density (VCD) prediction and oversampling examples.
+This repository contains the project workflow for annual tropospheric formaldehyde (HCHO) vertical column density (VCD) prediction and satellite-pixel oversampling.
 
 ## Repository Structure
 
@@ -12,6 +12,7 @@ RF/
 
 Oversampling/
   README.md
+  QUICK_START.md
   cakecut_src/
   code_oversampling/
   code_application/
@@ -35,13 +36,10 @@ See `RF/README.md` for input formats, run commands, outputs, and method details.
 
 ## Oversampling Codes
 
-The `Oversampling/` folder contains oversampling example codes downloaded from the ScienceDB dataset:
+The `Oversampling/` folder contains the oversampling workflow used in this project. It includes the Fortran oversampling kernel, R scripts for preparing and gridding satellite observations, and Python utilities for converting and reading gridded outputs.
 
 ```text
-Global OMI HCHO Level-3 oversampling dataset
-DOI: https://doi.org/10.57760/sciencedb.29626
-Source: https://www.scidb.cn/detail?dataSetId=a3d2f13ae6064ecb809430fb1ef51f6f
-License: CC BY 4.0
+Level-2 satellite observations -> daily gridded HCHO products -> netCDF outputs
 ```
 
 See `Oversampling/README.md` for the detailed file guide and system requirements.

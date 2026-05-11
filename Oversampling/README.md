@@ -1,15 +1,14 @@
-# ScienceDB Oversampling Codes
+# Oversampling Workflow
 
-This folder contains oversampling example codes downloaded from the ScienceDB dataset:
+This folder contains the oversampling workflow for generating gridded HCHO products from satellite observations. The workflow combines a Fortran oversampling kernel with R preparation scripts and Python utilities for output conversion and use.
 
 ```text
-Global OMI HCHO Level-3 oversampling dataset
-DOI: https://doi.org/10.57760/sciencedb.29626
-Source: https://www.scidb.cn/detail?dataSetId=a3d2f13ae6064ecb809430fb1ef51f6f
-License: CC BY 4.0
+Level-2 satellite observations -> daily gridded outputs -> analysis-ready netCDF files
 ```
 
 ## Folder Guide
+
+For the basic run sequence, see `QUICK_START.md`.
 
 ### `cakecut_src/`
 
@@ -27,7 +26,7 @@ tools_m.mod                           Module file for tools_m.f90
 
 ### `code_oversampling/`
 
-R interface and demonstration scripts for the oversampling workflow.
+R interface scripts for the oversampling workflow.
 
 ```text
 1he5toL2_OMI_demo.R        Read satellite files and generate daily L2 RData
@@ -37,11 +36,11 @@ R interface and demonstration scripts for the oversampling workflow.
 
 ### `code_application/`
 
-Python examples for processing the oversampling dataset.
+Python utilities for converting and using the oversampling outputs.
 
 ```text
 RData_convert_netCDF.py    Convert RData files to netCDF format
-netCDF_use_demo.py         Demonstrate use of the oversampling dataset in netCDF format
+netCDF_use_demo.py         Read and inspect oversampling results in netCDF format
 ```
 
 ## System Requirements
